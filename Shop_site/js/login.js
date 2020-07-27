@@ -6,6 +6,10 @@ var objPeople = [
         password: "mark"
     },
     {
+        username: "admin",
+        password: "admin"
+    },
+    {
         username: "user1",
         password: "12345"
     },
@@ -13,11 +17,6 @@ var objPeople = [
         username: "user2",
         password: "12345"
     },
-    {
-        username: "admin",
-        password: "87654321"
-    },
-
 ]
 
 function getInfo() {
