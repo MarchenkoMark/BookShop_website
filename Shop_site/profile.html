@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <script defer src="js/modal.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <a href="index.html" class="header__logo">MARCHENKO</a>
+                    <div class="header__search-bar">
+                        <input type="text" id="search-bar" placeholder="What can I help you with today?">
+                        <a href="#"><img class="search-icon"
+                                src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+                    </div>
+                    <button id="btn" data-modal-target="#modal">LOG IN</button>
+                    
+                    <div id="overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="header__list">
+            <div class="container">
+                <div class="header__list-inner">
+                    <ul class="header__ul">
+                        <li class="header__li"><a href="index.html" class="header__a">MAIN</a></li>
+                        <li class="header__li stroke__line">|</li>
+                        <li class="header__li"><a href="#" class="header__a">BOOKS</a></li>
+                        <li class="header__li stroke__line">|</li>
+                        <li class="header__li"><a href="#" class="header__a">YOUTUBE</a></li>
+                        <li class="header__li stroke__line">|</li>
+                        <li class="header__li"><a href="profile.html" class="header__a">ACCOUNT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div id="title" class="title">LOG IN</div>
+            <div id="message" class="message"></div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <input id ="username" class="username" type="text" placeholder="USERNAME">
+            <input id ="password" class="password" type="text" placeholder="PASSWORD">
+            <button class="confirm" onclick="getInfo()">Let's  go</button>
+        </div>
+    </div>
+    
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__text">No copyrights reserved</div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

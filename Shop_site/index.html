@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <a href="index.html" class="header__logo">MARCHENKO</a>
+                    <div class="header__search-bar">
+                        <input type="text" id="search-bar" placeholder="What can I help you with today?">
+                        <a href="#"><img class="search-icon"
+                                src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+                    </div>
+                    <button class="login" id="btn" data-modal-target="#modal">LOG IN</button>
+                    
+                    <div id="overlay"></div>
+                </div>  
+            </div>
+        </div>
+        <div class="header__list">
+            <div class="container">
+                <div class="header__list-inner">
+                    <ul class="header__ul">
+                        <li class="header__li"><a href="index.html" class="header__a">MAIN</a></li>
+                        <li class="header__li stroke__line">|</li>
+                        <li class="header__li"><a href="#" class="header__a">BOOKS</a></li>
+                        <li class="header__li stroke__line">|</li>
+                        <li class="header__li"><a href="#" class="header__a">YOUTUBE</a></li>
+                        <li class="header__li stroke__line">|</li>
+                        <li class="header__li"><button id="li_btn" onclick="checkLogged()" data-modal-target="#modal">ACCOUNT</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="container">
+            <div class="slider__inner">
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <img src="img/banner.png" alt="IMAGE">
+                        <div class="slider__item-right">
+                            <div class="slider__title">
+                                Newest rocket science lectures
+                            </div>
+                            <div class="slider__text">
+                                Legendary Neil Tyson's heuristics lectures
+                            </div>
+                            <a href="#" class="slider__link">LEARN NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <img src="img/banner.png" alt="IMAGE">
+                        <div class="slider__item-right">
+                            <div class="slider__title">
+                                Cowhide
+                                Standard Crew
+                            </div>
+                            <div class="slider__text">
+                                White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt
+                                is made of organic cotton and comes in a regular fit.
+                            </div>
+                            <a href="#" class="slider__link">LINK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <img src="img/banner.png" alt="IMAGE">
+                        <div class="slider__item-right">
+                            <div class="slider__title">
+                                Cowhide
+                                Standard Crew
+                            </div>
+                            <div class="slider__text">
+                                White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt
+                                is made of organic cotton and comes in a regular fit.
+                            </div>
+                            <a href="#" class="slider__link">LINK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="merch">
+        <div class="container">
+            <div class="merch__items">
+                <div class="merch__item">
+                    <div class="merch__item-img"><img src="img/landau.jpg" alt=""></div>
+                    <div class="item-name">LANDAU CH. 4</div>
+                    <div class="merch__item-botttom">
+                        <div class="item-price">$30</div>
+                        <a href="#" class="item-button"> BUY NOW</a>
+                    </div>
+                </div>
+                <div class="merch__item">
+                    <div class="merch__item-img"><img src="img/feynman.jpg" alt=""></div>
+                    <div class="item-name">FEYNMAN</div>
+                    <div class="merch__item-botttom">
+                        <div class="item-price">$40</div>
+                        <a href="#" class="item-button"> BUY NOW</a>
+                    </div>
+                </div>
+                <div class="merch__item">
+                    <div class="merch__item-img"><img src="img/6013269360.jpg" alt=""></div>
+                    <div class="item-name">ALGORYTHMS</div>
+                    <div class="merch__item-botttom">
+                        <div class="item-price">$15</div>
+                        <a href="#" class="item-button"> BUY NOW</a>
+                    </div>
+                </div>
+                <div class="merch__item">
+                    <div class="merch__item-img"><img src="img/layer4.png" alt=""></div>
+                    <div class="item-name">Branded shoe</div>
+                    <div class="merch__item-botttom">
+                        <div class="item-price">$300</div>
+                        <a href="#" class="item-button"> BUY NOW</a>
+                    </div>
+                </div>
+                <div class="merch__item">
+                    <div class="merch__item-img"><img src="img/layer5.png" alt=""></div>
+                    <div class="item-name">Branded shoe</div>
+                    <div class="merch__item-botttom">
+                        <div class="item-price">$300</div>
+                        <a href="#" class="item-button"> BUY NOW</a>
+                    </div>
+                </div>
+                <div class="merch__item">
+                    <div class="merch__item-img"><img src="img/layer6.png" alt=""></div>
+                    <div class="item-name">Branded shoe</div>
+                    <div class="merch__item-botttom">
+                        <div class="item-price">$300</div>
+                        <a href="#" class="item-button"> BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div id="title" class="title">LOG IN</div>
+            <div id="message" class="message"></div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <input id ="username" class="username" type="text" placeholder="USERNAME">
+            <input id ="password" class="password" type="text" placeholder="PASSWORD">
+            <button class="confirm" onclick="getInfo()">Let's  go</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer__text">No copyrights reserved</div>
+        </div>
+    </div>
+
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
